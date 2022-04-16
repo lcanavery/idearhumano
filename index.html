@@ -9,8 +9,8 @@
     <meta content="" name="description" />
 
     <!-- Favicons -->
-    <link href="img/favicon.png" rel="icon" />
-    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="img/favicon.ico" rel="icon" />
+    <link href="img/apple-touch-icon.ico" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet" />
@@ -40,7 +40,7 @@
         <div class="container-fluid">
             <div id="logo" class="pull-left">
                 <div class="d-flex p-1">
-                    <img src="./img/ih-10.png" height="55px" />
+                    <img src="./img/logo-01.svg" height="55px" />
                     <h1>
                         <a href="#intro" class="scrollto">idear<span class="color-idear">humano</span></a
               >
@@ -49,13 +49,13 @@
        
                 </div>
 
-                <nav id="nav-menu-container">
+                <nav id="nav-menu-container" style="margin-top: 1rem;">
                     <ul class="nav-menu">
                         <li class="menu-active"><a href="#intro">Inicio</a></li>
                         <li><a href="#about">Sobre nosotros</a></li>
                         <li><a href="#services">Servicios</a></li>
                         <li><a href="#team">Equipo</a></li>
-
+                        <li><a href="busquedas.html">Búsquedas</a></li>
                         <li><a href="#contact">Contacto</a></li>
                         </ul>
                         </nav>
@@ -102,7 +102,7 @@
                         </div>
                         <div class="carousel-container">
                             <div class="carousel-content">
-                                <h1 class="big-slider-3 wow fadeIn">CONSEGUIMOS LOS MEJORES PERFILES DE ARGENTINA PARA EL MUNDO</h1>
+                                <h1 class="big-slider-3 wow fadeIn">CONSEGUIMOS LOS MEJORES PERFILES DESDE ARGENTINA PARA LATAM</h1>
 
                             </div>
                         </div>
@@ -143,45 +143,43 @@
 
                 <div class="row about-cols">
                     <div class="col-md-4 wow fadeInUp">
-                        <div class="about-col">
+                        <div class="about-col pt-2">
                             <div class="img">
-                                <img src="img/about-mission.jpg" alt="" class="img-fluid" />
-                                <div class="icon">
+                                <!-- <img src="img/about-mission.jpg" alt="" class="img-fluid" /> -->
+                                <!-- <div class="icon">
                                     <i class="ion-ios-speedometer-outline"></i>
-                                </div>
+                                </div> -->
                             </div>
-                            <h2 class="title"><a href="#">Nuestra mision</a></h2>
+                            <h2 class="title"><a href="#">Nuestra misión</a></h2>
                             <p>
-                                Nos enfocamos en simplificarle a las empresas el proceso de seleccion de personal, con el fin de que puedan desarrollar sus procesos de reclutamiento con una solución integral que les permita ahorrar tiempo y dinero.
-                            </p>
+                                Ser una consultora global de atracción de talentos en tecnología, líder en Argentina para el mundo. </p>
                         </div>
                     </div>
-
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="about-col">
-                            <div class="img">
-                                <img src="img/about-plan.jpg" alt="" class="img-fluid" />
-                                <div class="icon"><i class="ion-ios-list-outline"></i></div>
-                            </div>
-                            <h2 class="title"><a href="#">Nuestro Plan</a></h2>
-                            <p>
-                                Nuestro plan de acción está diseñado para que las empresas puedan formar equipos de trabajo con personal altamente calificado.
-                            </p>
-                        </div>
-                    </div>
-
                     <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="about-col">
+                        <div class="about-col pt-2">
                             <div class="img">
-                                <img src="img/about-vision.jpg" alt="" class="img-fluid" />
-                                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+                                <!-- <img src="img/about-vision.jpg" alt="" class="img-fluid" /> -->
+                                <!-- <div class="icon"><i class="ion-ios-eye-outline"></i></div> -->
                             </div>
                             <h2 class="title"><a href="#">Nuestra Vision</a></h2>
                             <p>
-                                Creemos que las personas son la fuente de inspiración para el éxito de las empresas.
+                                Potenciar a empresas y personas, desde la pasión, el profesionalismo, entusiasmo, viviendo nuestros valores y diferenciarnos por la experiencia vivida en el proceso.
                             </p>
                         </div>
                     </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="about-col pt-2">
+                            <div class="img">
+                                <!-- <img src="img/about-plan.jpg" alt="" class="img-fluid" /> -->
+                                <!-- <div class="icon"><i class="ion-ios-list-outline"></i></div> -->
+                            </div>
+                            <h2 class="title"><a href="#">Nuestros Valores</a></h2>
+                            <p>
+                                Buscamos la excelencia en nuestros resultados, forjamos relaciones duraderas basadas en la confianza y vivimos con intensidad nuestros valores esenciales de colaboración, innovación, honestidad, pasión y apertura. </p>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </section>
@@ -190,7 +188,9 @@
         <!--==========================
       Services Section
     ============================-->
-        <section id="services">
+        <section id="services" class="position-relative">
+
+
             <div class="container">
                 <header class="section-header wow fadeInUp">
                     <h3>Servicios</h3>
@@ -207,216 +207,256 @@
                     </div>
                     <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
                         <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-                        <h4 class="title"><a href="">Couching</a></h4>
+                        <h4 class="title"><a href="">Coaching</a></h4>
                         <p class="description">
-                            Brindamos soporte a las empersas que necesitan mejorar la felicidad de sus empleados.
+                            Brindamos soporte a las empresas para que individuos y equipos logren sus objetivos.
+
                         </p>
                     </div>
                     <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
                         <div class="icon"><i class="ion-ios-paper-outline"></i></div>
                         <h4 class="title"><a href="">Gestión de talento</a></h4>
                         <p class="description">
-                            Nos encargamos de armar sus celulas de trabajo.
+                            Somos especialistas en armar equipos en el área de Reclutamiento y Selección. Potenciamos brindando estrategias de gestión para enfrentar los retos del mercado laboral.
+
                         </p>
                     </div>
+
+
 
                 </div>
             </div>
         </section>
-        <!-- #services -->
+        <section id="moreservices" class="position-relative">
+            <div class="container">
+                <header class="section-header wow fadeInUp otrosServicios">
+                    <h4>También ofrecemos</h4>
 
-        <!--==========================
+                </header>
+
+                <div class="masServicios">
+                    <img class="img1" src="./img/circles-01.png" />
+                    <img class="img2" src="./img/circles-02.png" />
+                    <div class="servicioChico  wow fadeInUp"><span>Diseño equipo de People Operations </span></div>
+                    <div class="servicioChico  wow fadeInUp"><span>Encuestas de Satisfacción Onboarding y Clima</span></div>
+                    <div class="servicioChico  wow fadeInUp"><span>Diseño de Documentos Cultural Fit de la empresa y mecánicas inter equipos
+                    </span></div>
+                    <div class="servicioChico  wow fadeInUp"><span>Planes de Capacitación </span></div>
+                    <div class="servicioChico  wow fadeInUp"><span>Diseño de Organigrama, bandas salariales y career path por área.
+                    </span></div>
+                    <div class="servicioChico wow fadeInUp"><span>Performance Review y Coaching Plan a implementar por los líderes de área y Team leaders </span></div>
+                    <div class="servicioChico  wow fadeInUp"><span>Estandarización, procesos y procedimientos del área </span></div>
+                    <div class="servicioChico  wow fadeInUp"><span>Colaborar con la Definición de los OKRs del área de RRHH, contribuir activamente para lograr los objetivos y KRs definidos.</span></div>
+                    <div class="servicioChico  wow fadeInUp"><span>Desarrollo, implementación de Plan de Beneficios.</span></div>
+
+                </div>
+            </div>
+
+
+            <!-- #services -->
+
+            <!--==========================
       Call To Action Section
     ============================-->
-        <section id="call-to-action" class="wow fadeIn">
-            <div class="container text-center">
-                <h3>Necesito personal</h3>
-                <p>
-                    Pongamonos en contacto para encontrar lo que tu empresa necesita
-                </p>
-                <a class="cta-btn" href="#">Hagamos contacto</a>
-            </div>
-        </section>
-        <!-- #call-to-action -->
+            <section id="call-to-action" class="wow fadeIn">
+                <div class="container text-center">
+                    <h3>Tenemos búsquedas abiertas</h3>
+                    <p>
+                        ¿Queres encontrar tu próximo trabajo?
+                    </p>
+                    <a class="cta-btn" href="busquedas.html">Mirá las búsquedas abiertas</a>
+                </div>
+            </section>
+            <!-- #call-to-action -->
 
 
-        <!--==========================
+            <!--==========================
       Clients Section
     ============================-->
-        <section id="clients" class="wow fadeInUp">
-            <div class="container">
-                <header class="section-header">
-                    <h3>Confían en nosotros</h3>
-                </header>
+            <section id="clients" class="wow fadeInUp">
+                <div class="container">
+                    <header class="section-header">
+                        <h3>Confían en nosotros</h3>
+                    </header>
 
-                <div class="owl-carousel clients-carousel">
-                    <img src="img/clients/client-1.png" alt="" />
-                    <img src="img/clients/client-2.png" alt="" />
-                    <img src="img/clients/client-3.png" alt="" />
-                    <img src="img/clients/client-4.png" alt="" />
-                    <img src="img/clients/client-5.png" alt="" />
+                    <div class="owl-carousel clients-carousel">
+                        <img src="img/clients/client-1.png" alt="" />
+                        <img src="img/clients/client-2.png" alt="" />
+                        <img src="img/clients/client-3.png" alt="" />
+                        <img src="img/clients/client-4.png" alt="" />
+                        <img src="img/clients/client-5.png" alt="" />
 
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- #clients -->
+            </section>
+            <!-- #clients -->
 
-        <!--==========================
+            <!--==========================
       Clients Section
     ============================-->
-        <section id="testimonials" class="section-bg wow fadeInUp">
-            <div class="container">
-                <header class="section-header">
-                    <h3>Testimonios</h3>
-                </header>
+            <section id="testimonials" class="section-bg wow fadeInUp">
+                <div class="container">
+                    <header class="section-header">
+                        <h3>Testimonios</h3>
+                    </header>
 
-                <div class="owl-carousel testimonials-carousel">
-                    <div class="testimonial-item">
-                        <h3>IthreexGlobal</h3>
-                        <h4>Start Up</h4>
-                        <p>
-                            <img src="img/quote-sign-left.png" class="quote-sign-left" alt="" /> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen
-                            aliquam, risus at semper.
-                            <img src="img/quote-sign-right.png" class="quote-sign-right" alt="" />
-                        </p>
+                    <div class="owl-carousel testimonials-carousel">
+                        <div class="testimonial-item">
+                            <h3>Romina Cruceño</h3>
+                            <h4>HR Leader</h4>
+                            <p>
+                                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="" />Excelente! La experiencia fue placentera desde la reunión inicial. Trabajan con celeridad, orientados a resultados y con mucho profesionalismo
+
+                                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="" />
+                            </p>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <h3>Maximiliano Stumpf</h3>
+                            <h4>Responsable de RRHH - Welii
+                            </h4>
+                            <p>
+                                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="" /> El acompañamiento fue invaluable. Incluso para cuando los temas no necesariamente fueron del proceso. La paciencia también.
+
+                                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="" />
+                            </p>
+                        </div>
+
+                        <!-- <div class="testimonial-item">
+                            <h3>Rojo Limon</h3>
+                            <h4>Tienda</h4>
+                            <p>
+                                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="" /> Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore
+                                quis sint minim.
+                                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="" />
+                            </p>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <h3>Alquler argentina</h3>
+                            <h4>Empresa</h4>
+                            <p>
+                                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="" /> Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit
+                                fore quem dolore labore illum veniam.
+                                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="" />
+                            </p>
+                        </div> -->
+
+
                     </div>
-
-                    <div class="testimonial-item">
-                        <h3>Siglo 21</h3>
-                        <h4>Universidad</h4>
-                        <p>
-                            <img src="img/quote-sign-left.png" class="quote-sign-left" alt="" /> Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat
-                            irure amet legam anim culpa.
-                            <img src="img/quote-sign-right.png" class="quote-sign-right" alt="" />
-                        </p>
-                    </div>
-
-                    <div class="testimonial-item">
-                        <h3>Rojo Limon</h3>
-                        <h4>Tienda</h4>
-                        <p>
-                            <img src="img/quote-sign-left.png" class="quote-sign-left" alt="" /> Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore
-                            quis sint minim.
-                            <img src="img/quote-sign-right.png" class="quote-sign-right" alt="" />
-                        </p>
-                    </div>
-
-                    <div class="testimonial-item">
-                        <h3>Alquler argentina</h3>
-                        <h4>Empresa</h4>
-                        <p>
-                            <img src="img/quote-sign-left.png" class="quote-sign-left" alt="" /> Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit
-                            fore quem dolore labore illum veniam.
-                            <img src="img/quote-sign-right.png" class="quote-sign-right" alt="" />
-                        </p>
-                    </div>
-
-
                 </div>
-            </div>
-        </section>
-        <!-- #testimonials -->
+            </section>
+            <!-- #testimonials -->
 
-        <!--==========================
+            <!--==========================
       Team Section
     ============================-->
-        <section id="team">
-            <div class="container">
-                <div class="section-header wow fadeInUp">
-                    <h3>Nuestro equipo</h3>
+            <section id="team">
+                <div class="container">
+                    <div class="section-header wow fadeInUp">
+                        <h3>Nuestro equipo</h3>
 
-                </div>
+                    </div>
 
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp">
-                        <div class="member">
-                            <img src="img/team-1.jpg" class="img-fluid" alt="" />
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Mariana</h4>
-                                    <span>RRHH | IT Recruiter
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp">
+                            <div class="member">
+                                <img src="img/team-1.jpg" class="img-fluid" alt="" />
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Mariana</h4>
+                                        <span>CEO 
+                                            
 
                                     </span>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="member">
-                            <img src="img/team-2.jpg" class="img-fluid" alt="" />
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Luciana</h4>
-                                    <span>Community Manager | It Recruiter</span>
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="member">
+                                <img src="img/team-2.jpg" class="img-fluid" alt="" />
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Luciana</h4>
+                                        <span>Team Leader Recruiter</span>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="member">
-                            <img src="img/team-3.jpg" class="img-fluid" alt="" />
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Tomas</h4>
-                                    <span>IT recruiter || RRHH</span>
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="member">
+                                <img src="img/team-3.jpg" class="img-fluid" alt="" />
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Tomas</h4>
+                                        <span>IT Recruiter</span>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="member">
-                            <img src="img/team-4.jpg" class="img-fluid" alt="" />
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Emiliano</h4>
-                                    <span>IT Recruiter | Web developer </span>
+                        <!-- <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="member">
+                                <img src="img/team-4.jpg" class="img-fluid" alt="" />
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Emiliano</h4>
+                                        <span>IT Recruiter | Web developer </span>
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- #team -->
+            </section>
+            <!-- #team -->
 
-        <!--==========================
+            <!--==========================
       Contact Section
     ============================-->
-        <section id="contact" class="section-bg wow fadeInUp">
-            <div class="container">
-                <div class="section-header">
-                    <h3>Contacto</h3>
-                    <p>Escribinos y empecemos a trabajar juntos.</p>
-                </div>
+            <section id="contact" class="section-bg wow fadeInUp">
+                <div class="container">
+                    <div class="section-header">
+                        <h3>Contacto</h3>
+                        <p>Escribinos y empecemos a trabajar juntos.</p>
+                    </div>
 
-                <div class="row contact-info">
+                    <div class="row contact-info d-flex justify-content-center">
 
-
+                        <!-- 
                     <div class="col-md-4 offset-md-2">
                         <div class="contact-phone">
                             <i class="ion-ios-telephone-outline"></i>
                             <h3>Telefono</h3>
                             <p><a href="tel:+543515509744">+54 351 550 9744</a></p>
                         </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="contact-email">
-                            <i class="ion-ios-email-outline"></i>
-                            <h3>Email</h3>
-                            <p><a href="mailto:idearhumano@gmail.com">idearhumano@gmail.com</a></p>
+                    </div> -->
+                        <div class="col-md-4">
+                            <div class="contact-email">
+                                <a href="https://api.whatsapp.com/send?phone=+5493515509744&text=Hola.Estamos buscando mejorar nuestro equipo!"> <img src="./img/whatsapp.png" class="whatsapp"></a>
+                                <h3>WhatsApp</h3>
+                                <p><a href="https://api.whatsapp.com/send?phone=+5493515509744&text=Hola.Estamos buscando mejorar nuestro equipo!">+54 9 351 550 9744</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-email">
+                                <i class="ion-ios-email-outline"></i>
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@idearhumano.com.ar">info@idearhumano.com.ar</a></p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <!-- <a href="https://api.whatsapp.com/send?phone=0123456789&text=Hola, Nececito mas informacion!">Envíanos un mensaje de WhatsApp</a>
+                <a href="whatsapp://send?text=Hola, Index.pe&phone=+12 346 678 910&abid=+12 346 678 910">+12 346 678 910</a> -->
 
-                <div class="form">
+                    <!-- <div class="form">
                     <div id="sendmessage">Your message has been sent. Thank you!</div>
                     <div id="errormessage"></div>
                     <form action="" method="post" role="form" class="contactForm">
@@ -442,10 +482,10 @@
                             <button type="submit">Enviar mensaje</button>
                         </div>
                     </form>
+                </div> -->
                 </div>
-            </div>
-        </section>
-        <!-- #contact -->
+            </section>
+            <!-- #contact -->
     </main>
 
     <!--==========================

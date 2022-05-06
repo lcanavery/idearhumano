@@ -516,7 +516,7 @@
                                 <div class="validation"></div>
                             </div>
                             <div class="text-center">
-                                <a class='btn btn-green' id='btnWhataspp' href=''> Enviar whatsapp</a>
+                                <a class='btn btn-green disabled' id='btnWhataspp' href='#'> Enviar whatsapp</a>
                             </div>
                         </form>
                     </div>
@@ -568,18 +568,24 @@
 
     <script>
         function getWapp() {
-            let link = "https://api.whatsapp.com/send?phone=+5493515509744&text="
-            link += 'Nombre:%20' + $('#name').val().split(' ').join('%20') + '%0A'
-            link += 'Email:%20' + $('#email').val().split(' ').join('%20') + '%0A'
-            link += 'Asunto:%20' + $('#subject').val().split(' ').join('%20') + '%0A'
-            link += 'Mensaje:%20' + $('#message').val().split(' ').join('%20') + '%0A'
+            const baseLink = 'https://api.whatsapp.com/send?phone=+5493515509744&text='
+            let link = baseLink
+            $('#name').val().length > 0 && (link = link + 'Nombre:%20' + $('#name').val().split(' ').join('%20') + '%0A')
+            $('#email').val().length > 0 && (link += 'Email:%20' + $('#email').val().split(' ').join('%20') + '%0A')
+            $('#subject').val().length > 0 && (link += 'Asunto:%20' + $('#subject').val().split(' ').join('%20') + '%0A')
+            $('#message').val().length > 0 && (link += 'Mensaje:%20' + $('#message').val().split(' ').join('%20') + '%0A')
+            if (link.length <= baseLink.length + 10) {
+                $('#btnWhataspp').addClass('disabled')
+                $('#btnWhataspp').attr('href', '#')
+            } else {
+                $('#btnWhataspp').removeClass('disabled')
+                $('#btnWhataspp').attr('href', link)
+            }
 
-            $('#btnWhataspp').attr('href', link)
 
         }
 
         $('#name').change(function() {
-
             getWapp()
         })
 

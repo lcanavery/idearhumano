@@ -164,7 +164,7 @@ h6 {
     line-height: 1;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: -3px;
 }
 
 #header #logo h1 a,
@@ -774,6 +774,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-col p {
     font-size: 14px;
     line-height: 24px;
+    text-align: center;
     color: #333;
     margin-bottom: 0;
     padding: 0 20px 20px 20px;
@@ -1353,6 +1354,29 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin: 0 2px;
 }
 
+.img-team {
+    border-radius: 100%;
+    max-width: 60%;
+    margin: auto;
+}
+
+#team .member {
+    background: none;
+}
+
+.mobile {
+    display: none;
+}
+
+.member-info.img-team.mobile {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.member-info.img-team.mobile h4 {
+    margin: 0;
+}
+
 
 /* Contact Section
 --------------------------------*/
@@ -1715,6 +1739,11 @@ body {
     width: auto;
 }
 
+.btn-green {
+    background: #3bbb28;
+    color: white;
+}
+
 
 /*--------------------------------------------------------------
 # Responsive Media Queries
@@ -1768,6 +1797,9 @@ body {
     }
     #header #logo h1 {
         font-size: 28px;
+    }
+    .mobile {
+        display: block;
     }
     #header #logo img {
         max-height: 40px;

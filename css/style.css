@@ -1159,19 +1159,32 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Clients Section
 --------------------------------*/
 
-#clients {
+#clients,
+.clientesSeccion {
     padding: 60px 0;
 }
 
 #clients img {
     max-width: 100%;
     opacity: 0.5;
+    filter: grayscale(1);
     transition: 0.3s;
-    padding: 15px 0;
+    /* padding: 15px 0; */
 }
 
-#clients img:hover {
+.clientes img {
+    max-width: 100%;
+    opacity: 0.5;
+    filter: grayscale(1);
+    transition: 0.3s;
+    max-width: 150px;
+    margin: 0 2rem;
+}
+
+#clients img:hover,
+.clientes img:hover {
     opacity: 1;
+    filter: none;
 }
 
 #clients .owl-nav,

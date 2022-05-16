@@ -8,14 +8,22 @@ function embed(id_cuenta) {
     }
     $.getJSON(url, { cuenta: id_cuenta, vacancies: { benefits: false } })
         .done(function(result) {
+            debugger;
             $.getJSON('https://idearhumano.hiringroom.com/jobs/get_vacancy/62751b8371927f0a81dc2b5b', { cuenta: id_cuenta })
                 .done(function(result) {
 
                     debugger;
                 });
+            var it = result.vacancies.filter(s => s.descript.includes('#B&uacute;squedasIT'));
+
             // $("head").append("<link href='https://hiringroom.com/assets/css/api/embed.css' rel='stylesheet' type='text/css'/>");
             $.each(result.vacancies, function(i, v) {
-                $('#embeded_code').append(
+                var div = '#embeded_code'
+                if (v.descript.includes('#B&uacute;squedasIT')) {
+                    div = '#embeded_code1'
+                }
+
+                $(div).append(
                     "<li class='microsite_vacancy'><h3 class='microsite_title'>" + v.name + "</h3>" +
                     "<ul class='microsite_datas'>" +
                     "<li class='data_location'><strong>Lugar:</strong> " + v.locality + "</li>" +

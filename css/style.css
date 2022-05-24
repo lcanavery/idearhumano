@@ -1658,11 +1658,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer {
-    display: none;
+    /* display: none; */
 }
 
 body {
-    border-bottom: #2a3338 solid 40px;
+    /* border-bottom: #2a3338 solid 40px; */
 }
 
 .big-slider {
@@ -1755,6 +1755,15 @@ body {
 .btn-green {
     background: #3bbb28;
     color: white;
+}
+
+.linkRedSocial {
+    cursor: pointer;
+    margin: 5px;
+}
+
+.linkRedSocial:hover {
+    filter: invert(1);
 }
 
 
